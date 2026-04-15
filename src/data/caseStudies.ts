@@ -11,6 +11,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260415-01',
+    title: 'nohow.ai',
+    highlight: '将任意文档一键转换为可对话的 AI 助手',
+    description: '上传 PDF、Word 等文档后，nohow.ai 自动提取知识结构并生成专属 AI 助手，实现精准问答与知识检索，大幅降低文档管理成本。',
+    category: '软件与应用',
+    tags: ['知识管理', 'RAG应用', '文档智能', 'AI助手'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/nohow-ai',
+    coverUrl: '/image/cases/placeholder.png'
+  },
+  {
+    id: 'auto-20260415-02',
+    title: 'Articos v2.0',
+    highlight: '30 分钟内完成用户研究，AI 秒级生成洞察报告',
+    description: 'Articos 通过 AI 自动化用户访谈分析与主题提炼，将传统数周的定性研究压缩至半小时内，登上 TAAFT 趋势榜 #3，是设计师加速研究节奏的利器。',
+    category: '设计工作流',
+    tags: ['用户研究', 'AI自动化', '定性分析', '设计提效'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/articos',
+    coverUrl: '/image/cases/placeholder.png'
+  },
+  {
+    id: 'auto-20260415-03',
+    title: '苹果选择 Google Gemini 驱动下一代 Siri',
+    highlight: 'Apple × Google 联手，AI Siri 随 iOS 26 重磅亮相',
+    description: '苹果宣布与 Google 签署多年合作协议，由 Gemini 模型为全新 AI Siri 提供底层支持，预计每年支付约 10 亿美元授权费。新版 Siri 将运行于苹果私有云以保障隐私，随 iOS 26 / macOS 26 Tahoe 发布，标志着 AI 助手竞争格局深刻重塑。',
+    category: '交互范式',
+    tags: ['行业动态', 'AI助手', 'Apple × Google', '大模型合作'],
+    sourceUrl: 'https://arstechnica.com/apple/2026/01/apple-says-its-new-ai-powered-siri-will-use-googles-gemini-language-models/',
+    coverUrl: '/image/cases/placeholder.png'
+  },
+  {
     id: '1',
     title: 'Google Stitch',
     highlight: '文本/语音/草图秒变高保真界面与生产级代码',
