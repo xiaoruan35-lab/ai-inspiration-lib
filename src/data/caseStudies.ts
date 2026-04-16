@@ -19,7 +19,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '设计工作流',
     tags: ['AI助手', '多工具调用', '设计自动化', '多模态生成'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/canvas-ai-assistant-can-now-call-various-tools-to-make-designs-for-you/',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-01.jpg'
   },
   {
     id: 'auto-20260416-02',
@@ -29,7 +29,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '设计工作流',
     tags: ['物理AI', '机器人仿真', 'AI训练数据', 'Sim-to-Real'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-02.jpg'
   },
   {
     id: 'auto-20260415-01',
@@ -39,7 +39,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '软件与应用',
     tags: ['知识管理', 'RAG应用', '文档智能', 'AI助手'],
     sourceUrl: 'https://theresanaiforthat.com/ai/nohow-ai',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-02.jpg'
   },
   {
     id: 'auto-20260415-02',
@@ -49,7 +49,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '设计工作流',
     tags: ['用户研究', 'AI自动化', '定性分析', '设计提效'],
     sourceUrl: 'https://theresanaiforthat.com/ai/articos',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-02.jpg'
   },
   {
     id: 'auto-20260415-03',
@@ -59,7 +59,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '交互范式',
     tags: ['行业动态', 'AI助手', 'Apple × Google', '大模型合作'],
     sourceUrl: 'https://arstechnica.com/apple/2026/01/apple-says-its-new-ai-powered-siri-will-use-googles-gemini-language-models/',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-02.jpg'
   },
   {
     id: '1',
