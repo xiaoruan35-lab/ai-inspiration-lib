@@ -9,7 +9,28 @@ export interface CaseStudy {
   coverUrl: string;
 }
 
+
 export const CASE_STUDIES: CaseStudy[] = [
+  {
+    id: 'auto-20260416-01',
+    title: 'Canva AI 2.0',
+    highlight: 'AI 助手自主调用工具链，一句话生成完整设计方案',
+    description: 'Canva 发布 AI 助手 2.0，支持 AI 自主调用 Slack、Gmail、Google Drive、Zoom 等工具完成设计任务。用户只需文本描述，AI 自动执行并生成多个可编辑方案，同时集成网页搜索与任务定时调度功能。图像生成速度提升 5 倍、成本降低 30 倍；图转视频速度提升 7 倍。已进入研究预览阶段。',
+    category: '设计工作流',
+    tags: ['AI助手', '多工具调用', '设计自动化', '多模态生成'],
+    sourceUrl: 'https://techcrunch.com/2026/04/16/canvas-ai-assistant-can-now-call-various-tools-to-make-designs-for-you/',
+    coverUrl: '/image/cases/placeholder.png'
+  },
+  {
+    id: 'auto-20260416-02',
+    title: 'Antioch — 物理 AI 仿真平台',
+    highlight: '做物理 AI 领域的 Cursor，让机器人在虚拟环境高效训练',
+    description: 'Antioch 致力于构建高保真机器人仿真工具，帮助开发者缩小"仿真到现实"(sim-to-real) 的差距。平台允许用户在虚拟环境中部署机器人模型并连接模拟传感器，生成训练数据与测试边缘案例，已完成 850 万美元种子轮融资，估值 6000 万美元。MIT 已将其用于大模型设计机器人的测试评估。',
+    category: '设计工作流',
+    tags: ['物理AI', '机器人仿真', 'AI训练数据', 'Sim-to-Real'],
+    sourceUrl: 'https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/',
+    coverUrl: '/image/cases/placeholder.png'
+  },
   {
     id: 'auto-20260415-01',
     title: 'nohow.ai',
