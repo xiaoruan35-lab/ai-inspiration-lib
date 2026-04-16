@@ -19,7 +19,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '设计工作流',
     tags: ['AI助手', '多工具调用', '设计自动化', '多模态生成'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/canvas-ai-assistant-can-now-call-various-tools-to-make-designs-for-you/',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-01.jpg'
   },
   {
     id: 'auto-20260416-02',
@@ -29,7 +29,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '设计工作流',
     tags: ['物理AI', '机器人仿真', 'AI训练数据', 'Sim-to-Real'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/',
-    coverUrl: '/image/cases/placeholder.png'
+    coverUrl: '/image/cases/auto-20260416-01.jpg'
   },
   {
     id: 'auto-20260415-01',
