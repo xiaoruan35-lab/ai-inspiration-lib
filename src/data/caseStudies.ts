@@ -12,6 +12,37 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260417-01',
+    title: 'ChatComparison AI v2.0',
+    highlight: '在统一界面中对比顶级 AI 模型的输出质量',
+    description: 'ChatComparison AI v2.0 发布一小时即登 TAAFT 趋势榜 #4，用户可在同一界面中并排对比 GPT、Claude、Gemini 等顶级模型对同一提示词的输出结果，支持实时评分、历史记录和批量测试，帮助用户快速选择最适合自己的 AI 模型。',
+    category: '软件与应用',
+    tags: ['AI对比', '模型评测', '效率工具', '多模型'],
+    sourceUrl: 'https://www.chatcomparison.ai/',
+    coverUrl: '/images/placeholder.jpg'
+  },
+  {
+    id: 'auto-20260417-02',
+    title: 'Brila — AI 语音助手',
+    highlight: '4 月 Product Hunt AI 类目票王，得票超 125 万',
+    description: 'Brila 以 1,258,243 票登顶 Product Hunt 2026 年 4 月 AI 产品榜，成为当月最受关注的 AI 语音产品。该产品聚焦 AI 驱动的自然语音交互体验，代表了 AI 语音助手赛道的新趋势。',
+    category: '软件与应用',
+    tags: ['AI语音', 'ProductHunt', '热门产品', '语音交互'],
+    sourceUrl: 'https://hunted.space/dashboard/brila-2',
+    coverUrl: '/images/placeholder.jpg'
+  },
+  {
+    id: 'auto-20260417-03',
+    title: 'Anthropic 发布 Claude Opus 4.7',
+    highlight: '自我验证 + 视觉增强 3 倍，编程能力再创新高',
+    description: 'Anthropic 发布 Claude Opus 4.7，核心升级包括：自我验证能力使多任务工作流解决率提升 3 倍；视觉分辨率提升至 2,576 像素长边（375 万像素），CV 基准从 54.5% 飙升至 98.5%；CursorBench 编程得分从 58% 提升至 70%，新增 /ultrareview 深度代码审查命令；API 新增 xhigh 推理档位，工具调用出错率降低约 1/3。',
+    category: '交互范式',
+    tags: ['Claude', 'Anthropic', '大模型发布', 'AI编程'],
+    sourceUrl: 'https://www.anthropic.com/news/claude-4-7',
+    coverUrl: '/images/placeholder.jpg'
+  },
+
+  {
     id: 'auto-20260416-01',
     title: 'Canva AI 2.0',
     highlight: 'AI 助手自主调用工具链，一句话生成完整设计方案',
@@ -25,7 +56,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     id: 'auto-20260416-02',
     title: 'Antioch — 物理 AI 仿真平台',
     highlight: '做物理 AI 领域的 Cursor，让机器人在虚拟环境高效训练',
-    description: 'Antioch 致力于构建高保真机器人仿真工具，帮助开发者缩小"仿真到现实"(sim-to-real) 的差距。平台允许用户在虚拟环境中部署机器人模型并连接模拟传感器，生成训练数据与测试边缘案例，已完成 850 万美元种子轮融资，估值 6000 万美元。MIT 已将其用于大模型设计机器人的测试评估。',
+    description: 'Antioch 致力于构建高保真机器人仿真工具，帮助开发者缩小“仿真到现实”(sim-to-real) 的差距。平台允许用户在虚拟环境中部署机器人模型并连接模拟传感器，生成训练数据与测试边缘案例，已完成 850 万美元种子轮融资，估值 6000 万美元。MIT 已将其用于大模型设计机器人的测试评估。',
     category: '设计工作流',
     tags: ['物理AI', '机器人仿真', 'AI训练数据', 'Sim-to-Real'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/',
@@ -75,7 +106,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     id: '2',
     title: 'Lovart',
     highlight: '全球首个专业 AI 设计智能体，新增 Move Object 功能',
-    description: '全链路设计智能体，支持多模型集成。其"移动对象"功能可自由拖拽元素并自动修复背景，将半小时操作缩短至30秒。',
+    description: '全链路设计智能体，支持多模型集成。其“移动对象”功能可自由拖拽元素并自动修复背景，将半小时操作缩短至30秒。',
     category: '设计工作流',
     tags: ['AI图像编辑', '自动背景修复', '多模型集成'],
     sourceUrl: 'https://www.lovart.ai',
@@ -202,3 +233,4 @@ export const CASE_STUDIES: CaseStudy[] = [
     coverUrl: '/image/cases/case-14.png'
   }
 ];
+
