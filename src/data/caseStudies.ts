@@ -19,7 +19,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '软件与应用',
     tags: ['AI对比', '模型评测', '效率工具', '多模型'],
     sourceUrl: 'https://www.chatcomparison.ai/',
-    coverUrl: '/images/placeholder.jpg'
+    coverUrl: '/image/cases/auto-20260417-01.jpg'
   },
   {
     id: 'auto-20260417-02',
@@ -29,7 +29,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '软件与应用',
     tags: ['AI语音', 'ProductHunt', '热门产品', '语音交互'],
     sourceUrl: 'https://hunted.space/dashboard/brila-2',
-    coverUrl: '/images/placeholder.jpg'
+    coverUrl: '/image/cases/auto-20260417-02.jpg'
   },
   {
     id: 'auto-20260417-03',
