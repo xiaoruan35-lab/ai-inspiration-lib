@@ -39,7 +39,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: '交互范式',
     tags: ['Claude', 'Anthropic', '大模型发布', 'AI编程'],
     sourceUrl: 'https://www.anthropic.com/news/claude-4-7',
-    coverUrl: '/images/placeholder.jpg'
+    coverUrl: '/image/cases/auto-20260417-03.jpg'
   },
 
   {
