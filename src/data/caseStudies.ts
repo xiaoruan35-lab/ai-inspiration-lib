@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260428-01',
+    title: 'GeniLoop — AI 图片转视频生成器',
+    highlight: '一张照片变动态视频，创意内容生产效率跃升10倍',
+    description: 'GeniLoop 登上 TAAFT 今日推荐榜单，专注将静态照片智能转化为高质量动态视频。无需剪辑技能，上传图片即可一键生成流畅的动态影像，支持多种风格模板与节奏控制，特别适合内容创作者、社交媒体运营和电商场景。起步价 $7.99/月，全平台兼容输出。',
+    category: '软件与应用',
+    tags: ['图片转视频', 'AI生成', '内容创作', 'TAAFT'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/geniloop-ai-image-to-video-generator/',
+    coverUrl: '/image/cases/auto-20260428-01.jpg'
+  },
+  {
+    id: 'auto-20260428-02',
+    title: 'Figma for Agents — AI 代理连接设计系统',
+    highlight: 'AI 代理直接读取组件库，生成的界面终于符合品牌规范',
+    description: 'Figma 推出 use_figma MCP 工具，荣获 Product Hunt 4月14日当日产品第一。核心突破是让 Claude Code、Cursor、Copilot 等 AI 代理能直接访问团队的真实 Figma 组件、变量和自动布局，彻底解决 AI 生成 UI “不符合设计系统”的痛点。支持从代码库生成组件、同步 design token 并检测漂移、自动生成无障碍规范等专业功能。',
+    category: '设计工作流',
+    tags: ['Figma', 'AI设计', '设计系统', 'MCP工具'],
+    sourceUrl: 'https://www.figma.com/blog/figma-for-agents/',
+    coverUrl: '/image/cases/auto-20260428-02.jpg'
+  },
+  {
+    id: 'auto-20260428-03',
+    title: 'OpenAI 发布 GPT-5.5：首个真正 Agentic AI 模型',
+    highlight: '代理编码+计算机操控+科研推理三合一，Token成本大幅下降',
+    description: 'OpenAI 于 4 月 23 日正式发布 GPT-5.5，定位为首个真正意义上的 Agentic AI：可自主理解意图、在工具间切换并完成复杂多步骤任务。核心升级包括：代理编码能力显著提升、可直接操控计算机软件、早期科学研究能力，同时 Codex 任务 Token 消耗大幅降低，延迟与 GPT-5.4 持平。已向 ChatGPT Plus/Pro/Business/Enterprise 用户推送，并开放 API。',
+    category: '交互范式',
+    tags: ['GPT-5.5', 'OpenAI', 'Agentic AI', '大模型发布'],
+    sourceUrl: 'https://openai.com/index/gpt-5-5/',
+    coverUrl: '/image/cases/auto-20260428-03.jpg'
+  },
+  {
     id: 'auto-20260417-01',
     title: 'ChatComparison AI v2.0',
     highlight: '在统一界面中对比顶级 AI 模型的输出质量',
