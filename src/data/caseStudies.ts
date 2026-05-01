@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260501-01',
+    title: 'Claude Security — AI 安全漏洞扫描',
+    highlight: 'AI 发现传统扫描器遗漏的安全漏洞',
+    description: 'Anthropic 推出 Claude Security，一款专为安全团队打造的 AI 漏洞检测工具，上线 4 小时即获 TAAFT 超 1000 保存。它能识别常规安全扫描器无法发现的深层漏洞，通过 AI 深度分析代码逻辑与攻击面，大幅提升企业安全防护能力。',
+    category: '软件与应用',
+    tags: ['AI安全', '漏洞检测', 'Anthropic', '企业工具'],
+    sourceUrl: 'https://claude.com/solutions/security',
+    coverUrl: '/image/cases/auto-20260501-01.jpg'
+  },
+  {
+    id: 'auto-20260501-02',
+    title: 'Brila — AI 驱动的评论建站工具',
+    highlight: '用 Google Maps 评论自动生成品牌单页网站',
+    description: 'Brila 是 2026 年 4 月 Product Hunt 月度票王（125 万+投票），它通过分析 Google Maps 真实评论提取客户选择的深层原因，运用 Jobs to Be Done 框架自动生成内容优先的单页网站，彻底告别模板套话。',
+    category: '设计工作流',
+    tags: ['AI建站', 'ProductHunt', '内容生成', '用户洞察'],
+    sourceUrl: 'https://hunted.space/dashboard/brila-2',
+    coverUrl: '/image/cases/auto-20260501-02.jpg'
+  },
+  {
+    id: 'auto-20260501-03',
+    title: '谷歌 400 亿美元加注 Anthropic',
+    highlight: 'AI 史上最大单笔投资，Anthropic 年收入暴涨 30 倍',
+    description: '谷歌宣布向 Anthropic 投入最高 400 亿美元（100 亿即刻到账），按 3800 亿美元估值入股。Anthropic 年化收入从 10 亿飙升至 300 亿美元，增长 30 倍。加上亚马逊、英伟达、微软的投资，累计获得 11GW+ 算力承诺，AI 行业"御三家"格局正式终结，演变为 Anthropic vs OpenAI 两强对垒。',
+    category: '交互范式',
+    tags: ['谷歌', 'Anthropic', 'AI投资', '行业格局'],
+    sourceUrl: 'https://www.36kr.com/p/3784243425565953',
+    coverUrl: '/image/cases/auto-20260501-03.jpg'
+  },
+  {
     id: 'auto-20260417-01',
     title: 'ChatComparison AI v2.0',
     highlight: '在统一界面中对比顶级 AI 模型的输出质量',
