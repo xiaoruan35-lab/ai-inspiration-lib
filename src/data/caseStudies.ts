@@ -12,6 +12,37 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+  {
+    id: 'auto-20260503-01',
+    title: 'Thea v4.2 — 游戏化 AI 学习助手',
+    highlight: '415K 浏览量登顶 TAAFT，多智能体学习系统',
+    description: 'Thea v4.2 是当前 TAAFT 最热 AI 工具，415,531 浏览量、1,319 点赞。它通过智能闪卡、每日挑战、Stacker 等多款学习游戏，让用户真正掌握知识而非死记硬背。新增场景题与排序题，深化理解；支持多语言学习套件，适合跨语言学习者。',
+    category: '软件与应用',
+    tags: ['AI学习', '游戏化教育', '闪卡工具', '多语言学习'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/thea/',
+    coverUrl: '/image/cases/auto-20260503-01.jpg'
+  },
+  {
+    id: 'auto-20260503-02',
+    title: 'Schole — 多智能体个性化 AI 学习平台',
+    highlight: 'Product Hunt 5 月票王，27,935 票登顶 AI 类目',
+    description: 'Schole 将学习科学与 Adaptive AI 结合，用多智能体系统（讲解、类比、任务、反馈、图解 Agent 协同）实现真正的个性化学习。整合哈佛、伯克利等顶尖院校知识图谱，支持按角色、工具、目标定制学习路径，精准解决现有 AI 学习工具"内容不相关 vs 缺乏系统性"的两大极端问题。',
+    category: '设计工作流',
+    tags: ['AI教育', '多智能体', '个性化学习', 'ProductHunt'],
+    sourceUrl: 'https://hunted.space/dashboard/schole-2',
+    coverUrl: '/image/cases/auto-20260503-02.jpg'
+  },
+  {
+    id: 'auto-20260503-03',
+    title: '谷歌 400 亿美元加注 Anthropic',
+    highlight: 'AI 史上最大单笔投资，算力军备竞赛升级',
+    description: '谷歌宣布向 Anthropic 投入最高 400 亿美元（100 亿即刻到账），按 3800 亿美元估值入股。Anthropic 年化收入从 10 亿飙升至 300 亿美元，暴涨 30 倍。加上亚马逊、英伟达、微软的投资，累计获得 11GW+ 算力承诺，AI 行业格局正式演变为 Anthropic vs OpenAI 两强对垒，OpenAI 面临被"孤立"局面。',
+    category: '交互范式',
+    tags: ['谷歌', 'Anthropic', 'AI投资', '行业格局'],
+    sourceUrl: 'https://www.36kr.com/p/3784243425565953',
+    coverUrl: '/image/cases/auto-20260503-03.jpg'
+  },
+
     id: 'auto-20260501-01',
     title: 'Claude Security — AI 安全漏洞扫描',
     highlight: 'AI 发现传统扫描器遗漏的安全漏洞',
