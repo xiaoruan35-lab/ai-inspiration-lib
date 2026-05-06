@@ -139,7 +139,7 @@ function Sidebar() {
 
         <div className="mt-6 pt-5 border-t border-gray-100">
           <p className="text-xs text-gray-400 leading-relaxed">
-            这里收录了 14 个 AI 交互设计领域的最新案例，涵盖设计工作流、软件应用、交互范式和智能硬件四大方向。
+            这里收录了 {CASE_STUDIES.length} 个 AI 交互设计领域的最新案例，涵盖设计工作流、软件应用、交互范式和智能硬件四大方向。
           </p>
         </div>
       </div>
