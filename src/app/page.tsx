@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import QRCode from "qrcode";
 import { CASE_STUDIES, CaseStudy } from "@/data/caseStudies";
 
 const CATEGORIES = ["全部", "设计工作流", "软件与应用", "交互范式", "智能硬件"] as const;
@@ -12,7 +13,101 @@ function getFeaturedStudies() {
   return CASE_STUDIES.filter((study) => FEATURED_IDS.includes(study.id));
 }
 
+// 生成二维码 SVG
+async function generateQRCode(url: string): Promise<string> {
+  try {
+    const svg = await QRCode.toString(url, {
+      type: "svg",
+      width: 80,
+      margin: 1,
+      color: {
+        dark: "#333333",
+        light: "#ffffff",
+      },
+    });
+    return svg;
+  } catch (err) {
+    console.error("QR Code generation failed:", err);
+    return "";
+  }
+}
+
+interface ShareMenuProps {
+  url: string;
+  onClose: () => void;
+}
+
+function ShareMenu({ url, onClose }: ShareMenuProps) {
+  const menuRef = useRef<HTMLDivElement>(null);
+  const [copied, setCopied] = useState(false);
+  const [qrCode, setQrCode] = useState('');
+
+  useEffect(() => {
+    // 生成二维码
+    generateQRCode(url).then(setQrCode);
+
+    // 点击外部关闭菜单
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        onClose();
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [url, onClose]);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('复制失败:', err);
+    }
+  };
+
+  return (
+    <motion.div
+      ref={menuRef}
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      className="absolute top-12 right-0 z-[100] bg-white rounded-xl shadow-xl p-3 w-56"
+    >
+      <div className="text-sm font-medium text-gray-700 mb-2">分享</div>
+
+      {/* 一键复制网址 */}
+      <button
+        onClick={handleCopy}
+        className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors text-left"
+      >
+        <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+          <svg className="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-sm font-medium text-gray-700">{copied ? '已复制' : '复制链接'}</p>
+        </div>
+      </button>
+
+      {/* 扫码分享 */}
+      <div className="mt-2 pt-2 border-t border-gray-100">
+        <p className="text-xs text-gray-400 mb-2">扫码分享</p>
+        <div className="flex justify-center">
+          <div
+            className="bg-white p-1.5 rounded-lg"
+            dangerouslySetInnerHTML={{ __html: qrCode }}
+          />
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
 function Card({ study }: { study: CaseStudy }) {
+  const [showShare, setShowShare] = useState(false);
+
   const categoryColors: Record<string, string> = {
     "设计工作流": "bg-purple-400",
     "软件与应用": "bg-pink-400",
@@ -29,12 +124,12 @@ function Card({ study }: { study: CaseStudy }) {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="glass-card rounded-3xl overflow-hidden hover:scale-[1.02] transition-transform h-full flex flex-col"
     >
-      {/* Image Section */}
-      <div className="relative w-full aspect-[16/10] overflow-hidden">
+      {/* Image Section - z-20 to stay above content */}
+      <div className="relative w-full aspect-[16/10] z-20">
         <img
           src={study.coverUrl}
           alt={study.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-t-3xl"
         />
         {/* Category Badge on Image */}
         <span
@@ -42,32 +137,39 @@ function Card({ study }: { study: CaseStudy }) {
         >
           {study.category}
         </span>
-        {/* External Link Icon */}
-        <a
-          href={study.sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute top-3 right-3 p-1.5 rounded-lg bg-white/80 hover:bg-white transition-colors cursor-pointer shadow-md"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <svg
-            className="w-4 h-4 text-purple-500"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        {/* Share Icon */}
+        <div className="absolute top-3 right-3 z-30">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowShare(!showShare);
+            }}
+            className="p-1.5 rounded-lg bg-white/80 hover:bg-white transition-colors cursor-pointer shadow-md"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
-        </a>
+            <svg
+              className="w-4 h-4 text-purple-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+              />
+            </svg>
+          </button>
+          <AnimatePresence>
+            {showShare && (
+              <ShareMenu url={study.sourceUrl} onClose={() => setShowShare(false)} />
+            )}
+          </AnimatePresence>
+        </div>
       </div>
 
-      {/* Content Section */}
-      <div className="p-5 flex flex-col flex-1">
+      {/* Content Section - z-10 to stay below image/share */}
+      <div className="relative z-10 p-5 flex flex-col flex-1">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{study.title}</h3>
         <p className="text-sm text-purple-600 font-medium mb-2">{study.highlight}</p>
         <p className="text-xs text-gray-500 leading-relaxed mb-4 flex-1">{study.description}</p>
