@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260506-01',
+    title: 'CreateYourMusic.ai — AI 音乐生成工具',
+    highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
+    description: 'CreateYourMusic.ai 上线仅数小时即登顶 TAAFT 新品榜，用户只需用文字描述音乐风格与情感，AI 即可即时生成专业品质的音乐作品。支持多风格创作，提供免费试用与 $10.49/月起的付费方案，大幅降低音乐创作门槛。',
+    category: '软件与应用',
+    tags: ['AI音乐', '音乐生成', '创意工具', 'AIGC'],
+    sourceUrl: 'https://createyourmusic.ai',
+    coverUrl: '/image/cases/auto-20260506-01.jpg'
+  },
+  {
+    id: 'auto-20260506-02',
+    title: 'Huddle01 VMs — 对话式 AI 基础设施',
+    highlight: '首个支持聊天控制 VM 的 MCP 原生云服务',
+    description: 'Huddle01 Cloud 强势登顶 2026 年 5 月 Product Hunt AI 品类榜首，获 42,158 票。作为首个 MCP 原生虚拟机服务商，用户可直接通过 Claude、Cursor 等 AI 助手对话创建和管理云基础设施，按秒计费，无出口带宽溢价，价格比主流云厂商低 70%。',
+    category: '设计工作流',
+    tags: ['MCP', '云基础设施', 'AI助手', '开发者工具'],
+    sourceUrl: 'https://get.huddle01.com',
+    coverUrl: '/image/cases/auto-20260506-02.jpg'
+  },
+  {
+    id: 'auto-20260506-03',
+    title: 'Anthropic 与 OpenAI 双双布局企业 AI 合资公司',
+    highlight: '两大 AI 巨头同时进军企业服务，AI 商业化进入新阶段',
+    description: 'Anthropic 与 Blackstone、Hellman & Friedman 联合发起 15 亿美元合资企业（估值 15 亿），OpenAI 同步推进募资 40 亿美元的"开发公司"计划（估值 100 亿）。两家公司均采用"前沿部署工程师"模式，将工程团队嵌入客户工作流，为企业定制 AI 工具。',
+    category: '交互范式',
+    tags: ['Anthropic', 'OpenAI', '企业AI', '行业动态'],
+    sourceUrl: 'https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/',
+    coverUrl: '/image/cases/auto-20260506-03.jpg'
+  },
+  {
     id: 'auto-20260501-01',
     title: 'Claude Security — AI 安全漏洞扫描',
     highlight: 'AI 发现传统扫描器遗漏的安全漏洞',
