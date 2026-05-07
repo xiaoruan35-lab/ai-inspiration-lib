@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260507-01',
+    title: 'RENDERCAD — 60秒生成逼真 CAD 产品渲染图',
+    highlight: 'CAD截图秒转4K级产品渲染图，零配置一键生成',
+    description: 'RENDERCAD 是 TAAFT 今日最新上架工具，支持 824+ 种 CAD 软件截图自动转换为超逼真渲染图（10-60秒完成），无需任何渲染配置。内置 2600+ 材料库、1300+ 背景环境，从 $9/月起，适合产品展示、客户审批与电商批量渲染场景，大幅降低产品可视化门槛。',
+    category: '设计工作流',
+    tags: ['CAD渲染', '产品可视化', 'AI图像生成', '设计提效'],
+    sourceUrl: 'https://rendercad.ai',
+    coverUrl: '/image/cases/auto-20260507-01.jpg'
+  },
+  {
+    id: 'auto-20260507-02',
+    title: 'Kanwas — 团队开源知识大脑',
+    highlight: '人类与AI Agent共享协作，开源团队知识库',
+    description: 'Kanwas 是 Product Hunt 2026年5月 AI 品类日榜冠军（418票），定位为"团队开源大脑"。支持人类与 AI Agent 共同协作的工作区，存储团队知识、调研成果与决策记录。具备实时协作、自进化优化能力，适用于产品探索、竞品调研与高风险决策场景，帮助团队高效沉淀与复用核心知识资产。',
+    category: '软件与应用',
+    tags: ['团队协作', 'AI知识库', '开源', '知识管理'],
+    sourceUrl: 'https://www.producthunt.com/products/kanwas',
+    coverUrl: '/image/cases/auto-20260507-02.jpg'
+  },
+  {
+    id: 'auto-20260507-03',
+    title: 'Anthropic 与 OpenAI 同时布局企业 AI 合资公司',
+    highlight: '两大AI巨头同日向华尔街进军，商业化竞争升级',
+    description: 'TechCrunch 报道：Anthropic 联合黑石、高盛等成立 15 亿美元合资企业，OpenAI 同推 40 亿美元"开发公司"计划（估值100亿美元）。两家均采用"前沿部署工程师"模式，将工程团队嵌入客户工作流直接定制 AI 工具。此举标志着 AI 商业化进入企业服务深水区，头部厂商竞争从模型能力延伸至落地服务能力。',
+    category: '交互范式',
+    tags: ['Anthropic', 'OpenAI', '企业AI', '行业动态'],
+    sourceUrl: 'https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/',
+    coverUrl: '/image/cases/auto-20260507-03.jpg'
+  },
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
@@ -116,7 +146,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     id: 'auto-20260416-02',
     title: 'Antioch — 物理 AI 仿真平台',
     highlight: '做物理 AI 领域的 Cursor，让机器人在虚拟环境高效训练',
-    description: 'Antioch 致力于构建高保真机器人仿真工具，帮助开发者缩小“仿真到现实”(sim-to-real) 的差距。平台允许用户在虚拟环境中部署机器人模型并连接模拟传感器，生成训练数据与测试边缘案例，已完成 850 万美元种子轮融资，估值 6000 万美元。MIT 已将其用于大模型设计机器人的测试评估。',
+    description: 'Antioch 致力于构建高保真机器人仿真工具，帮助开发者缩小"仿真到现实"(sim-to-real) 的差距。平台允许用户在虚拟环境中部署机器人模型并连接模拟传感器，生成训练数据与测试边缘案例，已完成 850 万美元种子轮融资，估值 6000 万美元。MIT 已将其用于大模型设计机器人的测试评估。',
     category: '设计工作流',
     tags: ['物理AI', '机器人仿真', 'AI训练数据', 'Sim-to-Real'],
     sourceUrl: 'https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/',
@@ -166,7 +196,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     id: '2',
     title: 'Lovart',
     highlight: '全球首个专业 AI 设计智能体，新增 Move Object 功能',
-    description: '全链路设计智能体，支持多模型集成。其“移动对象”功能可自由拖拽元素并自动修复背景，将半小时操作缩短至30秒。',
+    description: '全链路设计智能体，支持多模型集成。其"移动对象"功能可自由拖拽元素并自动修复背景，将半小时操作缩短至30秒。',
     category: '设计工作流',
     tags: ['AI图像编辑', '自动背景修复', '多模型集成'],
     sourceUrl: 'https://www.lovart.ai',
@@ -293,4 +323,3 @@ export const CASE_STUDIES: CaseStudy[] = [
     coverUrl: '/image/cases/case-14.png'
   }
 ];
-
