@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260516-01',
+    title: 'Notis 3.0.1 — 全栈 AI 办公助理',
+    highlight: '一条消息调动所有工具，AI 实习生全天在线',
+    description: 'Notis 3.0.1 以 116 万+ 保存量登顶 TAAFT 热榜，它像一位 AI 实习生，只需一条消息即可跨 WhatsApp、Telegram、iMessage、Slack 和邮件等全平台调度工作流。用户可以口述想法、委派琐事、自动更新流程，真正实现"一句话管理全部工具"的效率革命。',
+    category: '软件与应用',
+    tags: ['AI助理', '办公自动化', '跨平台', '效率工具'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/notis-ai/',
+    coverUrl: '/image/cases/auto-20260516-01.jpg'
+  },
+  {
+    id: 'auto-20260516-02',
+    title: 'Spellar 3.0 — 跨会议记忆的 AI 会议助手',
+    highlight: '从会议笔记到会议记忆，回溯任何历史对话',
+    description: 'Spellar 3.0 以 522 票登顶 Product Hunt 5 月 AI 品类榜首，核心突破是"跨会议记忆"——不再是孤立的会议记录，而是构建跨所有会议的关联知识库。支持自然语言查询如"客户三通电话前异议是什么"，每次回答均溯源到原始转录原文，且无需机器人加入通话即可静默录制。',
+    category: '软件与应用',
+    tags: ['AI会议', '知识管理', 'ProductHunt', '语音转写'],
+    sourceUrl: 'https://www.producthunt.com/products/spellar',
+    coverUrl: '/image/cases/auto-20260516-02.jpg'
+  },
+  {
+    id: 'auto-20260516-03',
+    title: 'Google I/O 2026：Gemini 4.0 + XR 眼镜 + Aluminium OS 三连发',
+    highlight: '10M 上下文、80g AI 眼镜、统一 OS 全栈 AI 重构',
+    description: 'Google I/O 2026（5月19-20日）将迎来三大重磅发布：Gemini 4.0 拥有 1000 万 Token 超长上下文（GPT-5.5 的 25 倍）、Android XR 智能眼镜仅重 80g 售价 $499 搭载本地 Gemini Nano 实现亚 200ms 响应、以及历时 8 年的 Fuchsia 项目商业化 Aluminium OS 统一 Android、Chrome OS 与 Fuchsia 三大平台。谷歌正从"AI 功能叠加"转向"AI 原生重构"。',
+    category: '智能硬件',
+    tags: ['Google', 'Gemini 4.0', 'XR眼镜', 'AluminiumOS'],
+    sourceUrl: 'https://blog.csdn.net/xyghehehehe/article/details/161134769',
+    coverUrl: '/image/cases/auto-20260516-03.jpg'
+  },
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
