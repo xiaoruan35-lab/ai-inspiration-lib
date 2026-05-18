@@ -12,6 +12,37 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260518-01',
+    title: 'Paraspeech v1.6 — 隐私优先的 AI 语音转写助手',
+    highlight: '离线优先、隐私保护，AI 实时润色语音转文字',
+    description: 'Paraspeech v1.6 上线 18 小时即获 TAAFT 60,702 次保存，5.0 满分好评。它支持离线语音转写与 AI 文案润色，覆盖 iOS 与 Intel Mac，引入日语与普通话专属本地模型，实时上下文感知改写，覆盖邮件、聊天、总结等场景，彻底解决会议记录与快速起草痛点。',
+    category: '软件与应用',
+    tags: ['语音转写', '隐私AI', '效率工具', '离线优先'],
+    sourceUrl: 'https://paraspeech.com',
+    coverUrl: '/image/cases/auto-20260518-01.jpg'
+  },
+  {
+    id: 'auto-20260518-02',
+    title: 'Naptick AI — 主动式 AI 床头睡眠伴侣',
+    highlight: '不只是追踪睡眠，在入睡前主动创造更好的睡眠条件',
+    description: 'Naptick AI 获 Product Hunt 2026 年 5 月 AI 品类日榜亚军（463 票）。它通过房间环境监测、1000+ 自适应音景、AI 睡眠教练对话，以及昼夜节律灯光疗法，在入睡前主动干预用户状态，同时以物理手势控制屏蔽睡前刷手机行为，帮助建立规律睡前习惯。',
+    category: '智能硬件',
+    tags: ['AI睡眠', '健康硬件', '行为干预', '智能家居'],
+    sourceUrl: 'https://launch.naptick.com',
+    coverUrl: '/image/cases/auto-20260518-02.jpg'
+  },
+  {
+    id: 'auto-20260518-03',
+    title: 'Google I/O 2026 明日开幕：Gemini 4.0 领衔重磅发布',
+    highlight: 'Gemini 4.0 + Android XR 眼镜 + Aluminium OS 三连发',
+    description: 'Google I/O 2026 主题演讲将于5月19日举行，距开幕仅24小时。预计发布：Gemini 4.0 旗舰模型（10M token 上下文窗口）、三星/Warby Parker 合作 Android XR 智能眼镜、以及 ChromeOS 替代品 Aluminium OS。这是 Google 历史上规模最大的 AI 集中发布活动，全球开发者与用户高度关注。',
+    category: '交互范式',
+    tags: ['GoogleI/O', 'Gemini', 'XR眼镜', 'AI行业动态'],
+    sourceUrl: 'https://aitoolsrecap.com/Blog/ai-news-may-17-2026',
+    coverUrl: '/image/cases/auto-20260518-03.jpg'
+  },
+[
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
