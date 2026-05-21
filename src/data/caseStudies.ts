@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260521-01',
+    title: 'CatDoes — AI 代理一句话构建完整应用',
+    highlight: '零代码描述想法即可构建 iOS/Android/Web 全栈应用并直接发布',
+    description: 'CatDoes 是一款全自主 AI 代理工具，只需用文字描述想法即可自动规划、编写代码、运行测试并修复错误，构建完整的移动应用和网站。支持 iOS、Android、Web 多平台，自动附带数据库、认证、存储等完整后端，内置错误监控 CatDoes Watch，代码完全归用户所有并可随时导出。适合设计师将原型快速转化为真实产品。',
+    category: '设计工作流',
+    tags: ['AI代理', '无代码', '应用构建', '全栈开发'],
+    sourceUrl: 'https://catdoes.com',
+    coverUrl: '/image/cases/auto-20260521-01.jpg'
+  },
+  {
+    id: 'auto-20260521-02',
+    title: 'StoreClaw — 具备销售能力的 AI 电商代理',
+    highlight: 'PH 5月AI榜首（60.8万票），AI代理自动分析店铺数据并执行优化',
+    description: 'StoreClaw 是 2026 年 5 月 Product Hunt AI 品类榜首产品（608,265 票），首个具备销售能力的 AI 电商平台。连接店铺后自动分析销售数据与增长轨迹，主动提出可执行优化建议，经用户审批后 AI 代理自动执行操作。支持随时查询经营状况，大幅降低电商运营精力成本。5 月 20 日上线即获 Product of the Day。',
+    category: '软件与应用',
+    tags: ['AI电商', '营销自动化', 'AI代理', '数据分析'],
+    sourceUrl: 'https://www.producthunt.com/products/storeclaw',
+    coverUrl: '/image/cases/auto-20260521-02.jpg'
+  },
+  {
+    id: 'auto-20260521-03',
+    title: 'Google I/O 2026：Gemini 3.5 Flash + Omni 世界模型发布',
+    highlight: '推理速度快 4 倍并超越 Pro，Omni 用物理逻辑生成可编辑视频',
+    description: 'Google I/O 2026 大会发布多项重大更新：Gemini 3.5 Flash 在编程、代理、多模态等基准测试中超越 Gemini 3.1 Pro，推理速度比竞品快 4 倍；Gemini Omni 是世界模型系列，支持多模态输入，可基于物理逻辑生成和编辑高质量视频；Gemini Spark 作为通用 AI 代理，可跨应用自主执行任务。标志着 AI 进入「代理化」与「世界模型」新阶段。',
+    category: '交互范式',
+    tags: ['Google I/O', 'Gemini', '世界模型', 'AI代理'],
+    sourceUrl: 'https://techstartups.com/2026/05/20/google-launches-gemini-3-5-flash-and-omni-world-model-at-i-o-2026-as-ai-race-with-openai-heats-up/',
+    coverUrl: '/image/cases/auto-20260521-03.jpg'
+  },
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
