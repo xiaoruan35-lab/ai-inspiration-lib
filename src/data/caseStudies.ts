@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260523-01',
+    title: 'AppDeploy — 从对话到部署，零成本上线Web应用',
+    highlight: 'ChatGPT里的一句话直接变成真实在线网站',
+    description: 'AppDeploy v1.2.0 让用户直接从 ChatGPT 或 Claude 的对话中部署真实 Web 应用，全程 100% 免费且无需编程知识。用户只需描述想要的应用，AI 自动生成代码、配置域名并完成部署。该工具在 TAAFT 上已获 50,641 次保存，成为低代码/无代码领域的热门新选择。',
+    category: '软件与应用',
+    tags: ['AI部署', '低代码', 'ChatGPT', 'Web开发'],
+    sourceUrl: 'https://appdeploy.ai',
+    coverUrl: '/image/cases/auto-20260523-01.jpg'
+  },
+  {
+    id: 'auto-20260523-02',
+    title: 'Fere AI — 自主交易型AI Agent',
+    highlight: '自然语言描述策略，AI自主研究并执行交易',
+    description: 'Fere AI 是一款自主交易型 AI Agent，用户用自然语言描述交易策略后，Agent 自动研究市场、构建方案并跨链执行交易。底层架构包含规划、检索、分析、执行、风控五大模块，已累计自主执行超过 1000 万次交易操作。Product Hunt 5月 AI 榜单排名第5，获 49,560 票。',
+    category: '交互范式',
+    tags: ['AI Agent', '自主交易', 'FinTech', 'Web3'],
+    sourceUrl: 'https://fereai.xyz',
+    coverUrl: '/image/cases/auto-20260523-02.jpg'
+  },
+  {
+    id: 'auto-20260523-03',
+    title: 'Anthropic每月向xAI支付12.5亿美元租用算力',
+    highlight: 'AI史上最大算力交易，总价值超400亿美元',
+    description: 'Anthropic 与 Elon Musk 旗下 xAI 达成史无前例的算力采购协议，包下田纳西州 Colossus 1 数据中心全部 300 兆瓦算力产出。Anthropic 将在 2029年5月前每月支付 12.5 亿美元，协议总价值超 400 亿美元。交易细节源自 SpaceX 向 SEC 提交的 S-1 文件，标志着 AI 竞争从算法较量全面升级为基础设施与资本的军备竞赛。',
+    category: '智能硬件',
+    tags: ['AI算力', 'Anthropic', 'xAI', '基础设施'],
+    sourceUrl: 'https://finance.sina.com.cn/tech/roll/2026-05-21/doc-inhysnxc6242823.shtml',
+    coverUrl: '/image/cases/auto-20260523-03.jpg'
+  },
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
