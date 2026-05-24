@@ -12,6 +12,36 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260524-01',
+    title: 'Adapt — 全能型 AI 工作代理',
+    highlight: '一句话连接所有工作系统，自然语言即可调度全公司数据',
+    description: 'Adapt 是一个通用 AI 工作代理，能够连接公司现有的数据仓库、BI 工具、营销平台、客服系统等所有工作软件。团队成员只需用自然语言提问，即可跨平台获取数据、自动生成报表和内部工具。支持 Slack、网页和移动端访问，无需编写任何代码即可部署内部应用和仪表盘。SOC 2 认证，数据加密且不用于模型训练。',
+    category: '软件与应用',
+    tags: ['AI Agent', '工作流自动化', '无代码', '企业协作'],
+    sourceUrl: 'https://theresanaiforthat.com/ai/adapt/',
+    coverUrl: '/image/cases/auto-20260524-01.jpg'
+  },
+  {
+    id: 'auto-20260524-02',
+    title: 'PollyReach — 让你的 AI 助手拥有真实电话号码和声音',
+    highlight: 'AI 代理装上真实电话号码，50+ 语种自动接打天衣无缝',
+    description: 'PollyReach 为 AI 代理配备真实电话号码和自然语音，可主动拨打电话完成餐厅预订、客服咨询等任务，也能 7×24 小时接听来电、过滤骚扰、留言归档。支持 50+ 种语言，每通电话提供完整录音和文字转录。区别于企业级 AI 电话方案，PollyReach 专为个人用户和 AI 代理打造，上线即获 Product Hunt 当日冠军和 529 票支持。',
+    category: '软件与应用',
+    tags: ['AI Agent', '语音交互', '自动化', '个人助理'],
+    sourceUrl: 'https://www.producthunt.com/products/pollyreach',
+    coverUrl: '/image/cases/auto-20260524-02.jpg'
+  },
+  {
+    id: 'auto-20260524-03',
+    title: 'xAI Grok Build 全面开放：$30/月即可拥有的终端编程代理',
+    highlight: 'xAI 编程代理从 $300 降至 $30，子代理 + 插件生态全面铺开',
+    description: 'xAI 于 5 月 24 日宣布将 Grok Build 终端编程代理向所有 SuperGrok（$30/月）和 X Premium+（$40/月）用户全面开放，此前仅限 $300/月 的 SuperGrok Heavy 用户。新版 v0.1.218 支持并行子代理、Gmail 连接器、插件系统（GitHub/Linear/Notion/Slack）、内嵌图像生成等。安装仅需一行 npm 命令，直接对标 Claude Code。',
+    category: '设计工作流',
+    tags: ['xAI', 'Grok', '编程代理', '开发工具'],
+    sourceUrl: 'https://aitoolsrecap.com/Blog/grok-build-supergrok-premium-plus-access-2026',
+    coverUrl: '/image/cases/auto-20260524-03.jpg'
+  },
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
@@ -293,4 +323,5 @@ export const CASE_STUDIES: CaseStudy[] = [
     coverUrl: '/image/cases/case-14.png'
   }
 ];
+
 
