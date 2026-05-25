@@ -12,6 +12,37 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: 'auto-20260525-01',
+    title: 'SlateHut — AI 提示词建站工具',
+    highlight: '输入提示词即刻生成完整网站，编辑发布一站式完成',
+    description: 'SlateHut 是一款 AI 驱动的无代码建站工具，用户只需输入自然语言提示词即可自动生成响应式网站，支持实时预览、持续编辑、一键发布。内置 SEO 优化和自定义域名，从创意到上线仅需数分钟，大幅缩短网站搭建周期。',
+    category: '设计工作流',
+    tags: ['AI建站', '无代码', '网站生成', '响应式设计'],
+    sourceUrl: 'https://slatehut.com',
+    coverUrl: '/image/cases/auto-20260525-01.jpg'
+  },
+  {
+    id: 'auto-20260525-02',
+    title: 'Stitch 3.0 by Google — AI UI 设计工具',
+    highlight: '文本提示流式生成UI界面，一键导出Figma/Netlify',
+    description: 'Google Labs 出品的 AI 设计工具，通过自然语言描述在实时画布上流式生成移动端和网页端 UI 界面。支持 DESIGN.md 导入现有设计系统、元素级原地编辑、HTML 原生交互动画，一键导出到 Figma、Netlify、Lovable 和 Bolt。面向产品设计师与开发者快速打造高保真原型，上线首日即获 Product Hunt 当日冠军。',
+    category: '设计工作流',
+    tags: ['AI设计', 'UI生成', 'Google Labs', '原型设计'],
+    sourceUrl: 'https://stitch.withgoogle.com',
+    coverUrl: '/image/cases/auto-20260525-02.jpg'
+  },
+  {
+    id: 'auto-20260525-03',
+    title: 'OpenAI 秘密提交 IPO 招股书，剑指万亿美元估值',
+    highlight: '250亿美元ARR + 9亿周活，高盛摩根士丹利联席承销',
+    description: '据 AIToolsRecap 报道，OpenAI 已秘密向 SEC 提交 IPO 招股说明书，由高盛和摩根士丹利担任联席承销商，目标估值超 1 万亿美元，最早 2026 年 9 月上市。公司拥有 250 亿美元年化经常性收入、9 亿周活跃用户，若成功上市将成为史上最大科技 IPO，标志着 AI 行业从风险资本时代正式迈入公开市场时代。',
+    category: '软件与应用',
+    tags: ['OpenAI', 'IPO', 'AI产业', '里程碑'],
+    sourceUrl: 'https://aitoolsrecap.com/Blog/ai-news-may-2026',
+    coverUrl: '/image/cases/auto-20260525-03.jpg'
+  },
+
+  {
     id: 'auto-20260506-01',
     title: 'CreateYourMusic.ai — AI 音乐生成工具',
     highlight: '文字描述秒变专业品质音乐，人人都是作曲家',
@@ -293,4 +324,5 @@ export const CASE_STUDIES: CaseStudy[] = [
     coverUrl: '/image/cases/case-14.png'
   }
 ];
+
 
